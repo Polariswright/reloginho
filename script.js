@@ -6,12 +6,13 @@ function carregar() {
     let hora = data.getHours();
     let diaSem = data.getDate();
     let mes = data.getMonth()
+    let mesAtual = mes + 1
     let ano = data.getFullYear()
-    msg.innerHTML = `Agora sao ${hora}:${minuto}. 
-    <p>Hoje eh dia ${diaSem}/${mes}/${ano}</p>`
+    msg.innerHTML = `Agora são ${hora}:${minuto}. 
+    <p>Hoje é dia ${diaSem}/${mesAtual}/${ano}</p>`
     if (hora >= 0 && hora < 12){
         //bom dia
-        img.src = 'manha.jpg'
+        img.src = 'manha.jpg' 
 
     }
     else if(hora >= 12 && hora < 18){
